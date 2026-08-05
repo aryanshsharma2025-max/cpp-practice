@@ -1,0 +1,13 @@
+# Executable files
+*.exe
+
+# Object files
+*.o
+*.obj
+
+# Output files
+*.out
+
+# Visual Studio temporary files
+*.pdb
+*.ilk
