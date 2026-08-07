@@ -1,42 +1,51 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-void calc(int a, int b)
+
+void calc(int a, int b, int choice)
 {
-    int choice;
     switch (choice)
     {
         case 1:
             cout << "Addition: " << a + b;
             break;
+
         case 2:
             cout << "Subtraction: " << a - b;
             break;
+
         case 3:
             cout << "Multiplication: " << a * b;
             break;
+
         case 4:
-            cout << "Division: " << a / b;
+            if (b != 0)
+                cout << "Division: " << (float)a / b;
+            else
+                cout << "Division by zero is not possible.";
             break;
+
         default:
-            cout << "Invalid choice";
-            break;
+            cout << "Invalid choice!";
     }
 }
-int main ()
+
+int main()
 {
-    int a, b;
+    int a, b, choice;
+
     cout << "Enter two numbers: ";
     cin >> a >> b;
 
-    cout << "Choose an operation:\n";
+    cout << "\nChoose an operation:\n";
     cout << "1. Addition\n";
     cout << "2. Subtraction\n";
     cout << "3. Multiplication\n";
     cout << "4. Division\n";
+
     cout << "Enter your choice: ";
-    int choice;
     cin >> choice;
 
-    calc(a, b);
+    calc(a, b, choice);
+
     return 0;
 }
