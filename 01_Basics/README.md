@@ -1,7 +1,7 @@
-# Basics
+# 01_Basics
 
-This folder contains beginner-level C++ programs.
+Topic: Variables, Data Types, Input Output, Operators
 
 ## Programs
 
-- (Programs will be added here)
+- Programs will be added here.
