@@ -1,38 +1,47 @@
 #include <iostream>
 using namespace std;
+
 void week(int n)
 {
-    switch (n)
+    if (n == 1)
     {
-    case 1:
         cout << "Monday";
-        break;
-    case 2:
+    }
+    else if (n == 2)
+    {
         cout << "Tuesday";
-        break;
-    case 3:
+    }
+    else if (n == 3)
+    {
         cout << "Wednesday";
-        break;
-    case 4:
+    }
+    else if (n == 4)
+    {
         cout << "Thursday";
-        break;
-    case 5:
+    }
+    else if (n == 5)
+    {
         cout << "Friday";
-        break;
-    case 6:
+    }
+    else if (n == 6)
+    {
         cout << "Saturday";
-        break;
-    case 7:
+    }
+    else if (n == 7)
+    {
         cout << "Sunday";
-        break;
-    default:
+    }
+    else
+    {
         cout << "Invalid input. Please enter a number between 1 and 7.";
     }
 }
+
 int main()
 {
     int n;
     cout << "Enter a number (1-7): ";
     cin >> n;
     week(n);
+    return 0;
 }
