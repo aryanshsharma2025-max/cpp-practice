@@ -14,7 +14,6 @@ int main()
         cin >> arr1[i];
     }
 
-    // Copying elements from arr1 to arr2
     for (int i = 0; i < n; i++)
     {
         arr2[i] = arr1[i];

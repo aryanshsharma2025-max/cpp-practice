@@ -23,7 +23,7 @@ int main()
             if (arr[i] == arr[j])
             {
                 count++;
-                freq[j] = 0; // Mark as visited
+                freq[j] = 0;
             }
         }
         if (freq[i] != 0)

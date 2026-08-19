@@ -22,13 +22,11 @@ int main()
         cin >> arr2[i];
     }
 
-    // Merging first array into merged array
     for (int i = 0; i < n1; i++)
     {
         merged[i] = arr1[i];
     }
 
-    // Merging second array into merged array
     for (int i = 0; i < n2; i++)
     {
         merged[n1 + i] = arr2[i];
