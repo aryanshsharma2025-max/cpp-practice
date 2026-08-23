@@ -6,7 +6,6 @@ class Rectangle
     int length, width;
 
 public:
-    // Parameterized constructor
     Rectangle(int l, int w)
     {
         length = l;

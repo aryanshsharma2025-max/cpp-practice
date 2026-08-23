@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 
 int main()
@@ -14,7 +14,6 @@ int main()
         cin >> arr[i];
     }
 
-    // Reversing the array
     for (int i = 0; i < n / 2; i++)
     {
         int temp = arr[i];
