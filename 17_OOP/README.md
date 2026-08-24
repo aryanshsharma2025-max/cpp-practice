@@ -21,6 +21,11 @@ Topic: Object Oriented Programming
 - `006_copy_constructor.cpp` - Point class demonstrating explicit copy constructor
 - `007_constructor_overloading.cpp` - Box class demonstrating constructor overloading (default, 1 parameter, 3 parameters)
 - `008_default_argument_constructor.cpp` - SimpleInterest class demonstrating constructor with default arguments
+- `009_member_initializer_list.cpp` - StudentRecord demonstrating member initializer list syntax for const data member initialization
+- `010_deep_copy_dynamic_constructor.cpp` - DynamicArray demonstrating dynamic memory allocation in constructor and Deep Copy constructor
+- `011_delegating_constructor.cpp` - Product class demonstrating delegating constructor (constructor chaining / re-use)
+- `012_explicit_constructor.cpp` - Distance class demonstrating explicit constructor to prevent implicit type conversions
+- `013_this_pointer_in_constructor.cpp` - Employee class demonstrating 'this' pointer in constructor to resolve name shadowing
 
 ### 07_Encapsulation:
 - `001_Teacher_Encapsulation.cpp` - Teacher class demonstrating data hiding with private salary and public getter/setter methods
