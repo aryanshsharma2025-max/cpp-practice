@@ -1,0 +1,16 @@
+--target=i686-pc-windows-gnu
+-xc++
+-isystem
+C:\mingw\lib\gcc\mingw32\6.3.0\include\c++
+-isystem
+C:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32
+-isystem
+C:\mingw\lib\gcc\mingw32\6.3.0\include\c++\backward
+-isystem
+C:\mingw\lib\gcc\mingw32\6.3.0\include
+-isystem
+C:\mingw\include
+-isystem
+C:\mingw\lib\gcc\mingw32\6.3.0\include-fixed
+-isystem
+C:\mingw\mingw32\include
