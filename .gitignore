@@ -1,13 +1,35 @@
+# Compiled binaries & object files
 *.exe
 *.o
 *.obj
 *.out
 *.class
-*.log
-.vscode/
-.idea/
+*.dll
+*.so
+*.dylib
+
+# Build directories
 bin/
 Debug/
 Release/
 x64/
 x86/
+
+# Environment & local files
+.env
+.env.*
+!.env.example
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+tempCodeRunnerFile.*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
