@@ -9,7 +9,7 @@ int main() {
     cout << "Enter number of columns: ";
     cin >> cols;
 
-    int matrix[50][50]; // fixed size for simplicity (max 50x50)
+    int matrix[50][50];
 
     cout << "Enter elements of the matrix:\n";
     for (int i = 0; i < rows; i++) {
