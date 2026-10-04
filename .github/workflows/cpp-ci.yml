@@ -1,0 +1,26 @@
+name: C++ Compilation CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+
+    - name: Set up GCC
+      run: sudo apt-get update && sudo apt-get install -y build-essential
+
+    - name: Verify compilation across active modules
+      run: |
+        echo "Verifying representative C++ source files..."
+        g++ -std=c++17 -Wall -Wextra 01_Basics/001_hello_world.cpp -o hello
+        g++ -std=c++17 -Wall -Wextra "17_OOP/01_Classes_Objects/001_Student_Class.cpp" -o student_oop
+        g++ -std=c++17 -Wall -Wextra "19_DSA/02_Stack/001_stack_implementation.cpp" -o stack_dsa
+        echo "All representative programs compiled successfully."
