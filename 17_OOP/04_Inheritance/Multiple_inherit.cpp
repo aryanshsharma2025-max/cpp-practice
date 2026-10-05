@@ -1,59 +1,59 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class A
 {
     int a;
 
-    public:
-        void get_a();
-        int show_a();
+public:
+    void get_a();
+    int show_a();
 };
 
 class B
 {
     int b;
 
-    public:
-        void get_b();
-        int show_b();
+public:
+    void get_b();
+    int show_b();
 };
 
 class C : public A, public B
 {
     int c;
 
-    public:
-        void add();
-        void display();
+public:
+    void add();
+    void display();
 };
 
-void A :: get_a()
+void A::get_a()
 {
     a = 10;
 }
 
-int A :: show_a()
+int A::show_a()
 {
     return a;
 }
 
-void B :: get_b()
+void B::get_b()
 {
     b = 20;
 }
 
-int B :: show_b()
+int B::show_b()
 {
     return b;
 }
 
-void C :: add()
+void C::add()
 {
     c = show_a() + show_b();
 }
 
-void C :: display()
+void C::display()
 {
     cout << "a = " << show_a() << "\n";
     cout << "b = " << show_b() << "\n";
