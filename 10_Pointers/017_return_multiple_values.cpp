@@ -1,4 +1,3 @@
-//return multiple values from a function using pointers
 #include <iostream>
 using namespace std;
 int sum(int *a , int *b)
