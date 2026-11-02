@@ -19,8 +19,9 @@ jobs:
 
     - name: Verify compilation across active modules
       run: |
-        echo "Verifying representative C++ source files..."
+        echo "Verifying representative C++ source files across active modules..."
         g++ -std=c++17 -Wall -Wextra 01_Basics/001_hello_world.cpp -o hello
-        g++ -std=c++17 -Wall -Wextra "17_OOP/01_Classes_Objects/001_Student_Class.cpp" -o student_oop
-        g++ -std=c++17 -Wall -Wextra "19_DSA/02_Stack/001_stack_implementation.cpp" -o stack_dsa
+        g++ -std=c++17 -Wall -Wextra 02_If_Else/001_greatest_among_3.cpp -o if_else
+        g++ -std=c++17 -Wall -Wextra 10_Pointers/001_add_two_numbers.cpp -o pointer
+        g++ -std=c++17 -Wall -Wextra "13_OOP/01_Classes_Objects/001_Student_Class.cpp" -o student_oop
         echo "All representative programs compiled successfully."
